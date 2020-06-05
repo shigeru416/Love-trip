@@ -27,6 +27,7 @@
 
 ## 設計書
 ER図：https://docs.google.com/document/d/17EUmGfOxZC7lc0m7Pbbhege0r-iVMKeF/edit
+フレームワーク：
 
 ### 機能一覧
 https://docs.google.com/spreadsheets/d/1S0GKglB_jZ7_tOJ5BPxMx6tgFPUyWACxkDtYlSCYMlQ/edit#gid=0
