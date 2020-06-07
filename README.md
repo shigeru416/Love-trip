@@ -28,7 +28,9 @@
 ## 設計書
 画面遷移図_UI Flows：https://docs.google.com/document/d/1-giO6lqluzJihvR7bDZsc_mK-08VLTVi/edit
 フレームワーク：https://app.diagrams.net/#G1rxKBXzn3Bjk2Fl52JhguhACmyFpRmYTu
-ER図：
+ER図：https://app.diagrams.net/#G1tlAv5hhZW4xLLox0scHn5G0zlUj_C7AM
+データベースデザイン：https://docs.google.com/spreadsheets/d/1UST6CVbKRYLWZSAQDvnedmnkmoFNwW0K/edit#gid=35452870
+アプリケーションデザイン：https://docs.google.com/spreadsheets/d/1h1cpg59fdWR_GEgEz6GNlGXDXQBQR3n3/edit#gid=2058948176
 
 ### 機能一覧
 https://docs.google.com/spreadsheets/d/1S0GKglB_jZ7_tOJ5BPxMx6tgFPUyWACxkDtYlSCYMlQ/edit#gid=0
