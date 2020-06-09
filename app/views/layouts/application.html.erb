@@ -11,7 +11,9 @@
 
   <body>
     <% if user_signed_in? %>
-     <%= render "layouts/customer_header" %>
+      <%= render "layouts/customer_header" %>
+    <% elsif admin_signed_in? %>
+      <%= render "layouts/admin_header" %>
     <% else %>
       <%= render "layouts/header" %>
     <% end %>
@@ -19,6 +21,5 @@
     <%= yield %>
 
     <%= render "layouts/footer" %>
-  
   </body>
 </html>
