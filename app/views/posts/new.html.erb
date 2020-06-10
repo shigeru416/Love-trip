@@ -27,7 +27,7 @@
 	<%= f.label :course, :おすすめコース %>
 	<%= f.text_area :course, autofocus: true  %>
 
-	<%= f.label :tag_list, :タグをカンマ区切りで入力 %>
+	<%= f.label :tag_list, :スペースで区切ってタグを入力 %>
 	<%= f.text_field :tag_list, value: @post.tag_list.join(',') %>
 
 	<%= f.submit %>

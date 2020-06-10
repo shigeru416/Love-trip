@@ -13,6 +13,11 @@ class PostsController < ApplicationController
 		redirect_to new_post_path
 	end
 
+	def index
+		@posts = Post.all
+	end
+
+	
 	private
 	def post_params
 		params.require(:post).permit(:user_id, :title, :category_id, :image, :content, :place, :tips, :course, :tag_list, post_images_images: [])
