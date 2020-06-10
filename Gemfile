@@ -66,3 +66,5 @@ gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
 gem 'bxslider-rails'
 gem 'acts-as-taggable-on'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
