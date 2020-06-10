@@ -17,6 +17,9 @@
             <%= link_to "旅投稿一覧", "#", class: "nav-link", data: {"turbolinks" => false}  %>
           </li>
           <li class="nav-item">
+            <%= link_to "カテゴリー一覧", admins_categories_path, class: "nav-link", data: {"turbolinks" => false}  %>
+          </li>
+          <li class="nav-item">
             <%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: "nav-link", data: {"turbolinks" => false}  %>
           </li>
         </ul>
