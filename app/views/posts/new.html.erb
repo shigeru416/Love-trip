@@ -13,6 +13,8 @@
 	<%= f.label :place, :場所名 %>
 	<%= f.text_field :place, autofocus: true  %>
 
+	<%= f.attachment_field :post_images_images, multiple: true %>
+
 	<%= f.label :category_id, :カテゴリー %>
 	<%= f.collection_select :category_id, @categories, :id, :name, include_blank: "選択してください" %>
 
@@ -25,7 +27,7 @@
 	<%= f.label :course, :おすすめコース %>
 	<%= f.text_area :course, autofocus: true  %>
 
-	<%= f.label :tag_list, :タグをカンマ区切りで入力 %>
+	<%= f.label :tag_list, :スペースで区切ってタグを入力 %>
 	<%= f.text_field :tag_list, value: @post.tag_list.join(',') %>
 
 	<%= f.submit %>
