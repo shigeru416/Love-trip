@@ -59,12 +59,7 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-12">
-							<section class="comment-form">
-						      <%= form_for [@post, @post_comment] do |f| %>
-						        <%= f.text_area :comment, class: "form-control" %>
-						        <%= f.submit '送信' %>
-						      <% end %>
-						    </section>
+							<%= render "comment_form", post: @post, post_comment: @post_comment %>
 						</div>
 					</div>
 				</div>

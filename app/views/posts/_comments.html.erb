@@ -14,7 +14,7 @@
 			<td width="127">
 				<%= post_comment.created_at.strftime('%Y/%m/%d') %>
 				<% if current_user == post_comment.user %>
-					<%= link_to'', post_post_comments_path(post, post_comment), method: :delete, class: "far fa-trash-alt" %>
+					<%= link_to'', post_post_comments_path(post, post_comment), method: :delete, class: "far fa-trash-alt", remote: true %>
 				<% end %>
 			</td>
 		</tr>
