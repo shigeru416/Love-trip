@@ -52,16 +52,45 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-12">
-							<section class="comments">
-								<%= render "comments", post: @post %>
-							</section>
+							<div class="comments">
+								<p><%= @post.post_comments.count %>件のコメント</p>
+								<table class="table">
+									<% @post.post_comments.each do |post_comment| %>
+									<tr>
+										<td width="50">
+											<%= attachment_image_tag(post_comment.user, :image, :fill, 40, 40, class: "rounded-circle float-left img", fallback: "no-image-mini.jpg") %>
+										</td>
+										<td width="30">
+											<%= post_comment.user.name %>
+										</td>
+										<td>
+											<p><%= post_comment.comment %></p>
+										</td>
+										<td width="127">
+											<%= post_comment.created_at.strftime('%Y/%m/%d') %>
+											<% if current_user == post_comment.user %>
+												<%= link_to '', post_post_comments_path(post_comment), method: :delete, class: "far fa-trash-alt" %>
+											<% end %>
+										</td>
+									</tr>
+									<% end %>
+								</table>
+
+
+							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-12">
-							<section class="comment-form">
-								<%= render "comment_form", post: @post, post_comment: @post_comment %>
-							</section>
+							<div class="comment-form">
+
+								<%= form_for [@post, @post_comment] do |f| %>
+							        <%= f.text_area :comment, class: "form-control" %>
+							        <%= f.submit '送信' %>
+							    <% end %>
+								
+
+							</div>
 						</div>
 					</div>
 				</div>
