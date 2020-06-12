@@ -19,3 +19,17 @@
 body{
 	margin-top:160px;
 	}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wannago{
+	float: left;
+}
+
+.favorite{
+	floate:left;
+}
