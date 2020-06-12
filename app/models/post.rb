@@ -17,4 +17,7 @@ class Post < ApplicationRecord
     	favorites.where(user_id: user.id).exists?
   	end
 
+  	def wannago_listed_by?(user)
+    	wannago_lists.where(user_id: user.id).exists?
+  	end
 end
