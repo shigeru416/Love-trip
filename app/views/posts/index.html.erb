@@ -1,5 +1,15 @@
-<% @posts.each do |post| %>
-  <% post.tags.each do |tag| %>
-     <%= tag.name %>
-  <% end %>
-<% end %>
+<table class="table">
+	<% @posts.each do |post| %>
+		<tr>
+			<td>
+				<%= link_to post.title, post_path(post.id) %>
+			</td>
+			<td>
+				<% post.tags.each do |tag| %>
+				     <%= tag.name %>
+				<% end %>
+			</td>
+		</tr>
+
+	<% end %>
+</table>

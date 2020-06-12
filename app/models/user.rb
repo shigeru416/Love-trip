@@ -11,5 +11,6 @@ class User < ApplicationRecord
   has_many :browsing_histories
   has_many :post_comments
   has_many :user_rooms
-
+  
+  attachment :image, destroy: false
 end
